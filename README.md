@@ -2,7 +2,7 @@
 
 A [Docker](https://docker.com/) container for [Memcached](http://memcached.org/).
 
-## Memcached (STABLE BRANCH)
+## Memcached (DEVELOPMENT BRANCH)
 
 ### Run the container
 
@@ -13,13 +13,14 @@ Using the `docker` command:
       -h "${CONTAINER}" \
       -p 11211:11211 \
       -d \
-      simpledrupalcloud/memcached:latest
+      simpledrupalcloud/memcached:dev
       
 Using the `fig` command
 
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-memcached.git "${TMP}" \
       && cd "${TMP}" \
+      && git checkout dev \
       && fig up
 
 ### Build the image
@@ -27,7 +28,8 @@ Using the `fig` command
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-memcached.git "${TMP}" \
       && cd "${TMP}" \
-      && sudo docker build -t simpledrupalcloud/memcached:latest . \
+      && git checkout dev \
+      && sudo docker build -t simpledrupalcloud/memcached:dev . \
       && cd -
 
 ## License
