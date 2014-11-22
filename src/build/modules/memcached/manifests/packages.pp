@@ -4,7 +4,8 @@ class memcached::packages {
   }
 
   package {[
-      'build-essential'
+      'build-essential',
+      'libevent-dev'
     ]:
     ensure => present,
     require => Exec['apt-get update']
