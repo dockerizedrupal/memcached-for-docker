@@ -1,2 +1,5 @@
-docker-memcached
-================
+# docker-memcached
+
+## License
+
+**MIT**

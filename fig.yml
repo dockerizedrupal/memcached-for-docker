@@ -1,0 +1,3 @@
+memcached:
+  image: simpledrupalcloud/memcached:latest
+  hostname: memcached
