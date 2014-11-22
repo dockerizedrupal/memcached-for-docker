@@ -12,6 +12,7 @@ Using the `docker` command:
       --name "${CONTAINER}" \
       -h "${CONTAINER}" \
       -p 11211:11211 \
+      -p 11211:11211/udp \
       -d \
       simpledrupalcloud/memcached:dev
       

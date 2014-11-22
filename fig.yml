@@ -3,3 +3,4 @@ memcached:
   hostname: memcached
   ports:
     - "11211:11211"
+    - "11211:11211/udp"
