@@ -11,6 +11,7 @@ RUN /src/build.sh
 
 RUN rm -rf /tmp/*
 
-EXPOSE 9000
+EXPOSE 11211/tcp
+EXPOSE 11211/udp
 
 ENTRYPOINT ["/src/run.sh"]
