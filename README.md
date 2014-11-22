@@ -11,6 +11,7 @@ Using the `docker` command:
     CONTAINER="memcached" && sudo docker run \
       --name "${CONTAINER}" \
       -h "${CONTAINER}" \
+      -p 11211:11211 \
       -d \
       simpledrupalcloud/memcached:latest
       
