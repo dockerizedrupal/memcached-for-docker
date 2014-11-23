@@ -14,14 +14,17 @@ class memcached {
   }
 
   exec { '/bin/bash -c "cd /tmp/memcached-1.4.21 && ./configure"':
+    timeout => 0,
     require => Exec['tar xzf memcached-1.4.21.tar.gz']
   }
 
   exec { '/bin/bash -c "cd /tmp/memcached-1.4.21 && make"':
+    timeout => 0,
     require => Exec['/bin/bash -c "cd /tmp/memcached-1.4.21 && ./configure"']
   }
 
   exec { '/bin/bash -c "cd /tmp/memcached-1.4.21 && make install"':
+    timeout => 0,
     require => Exec['/bin/bash -c "cd /tmp/memcached-1.4.21 && make"']
   }
 }
