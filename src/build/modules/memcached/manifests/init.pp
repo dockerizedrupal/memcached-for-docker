@@ -1,6 +1,5 @@
 class memcached {
   require memcached::packages
-  require memcached::supervisor
 
   file { '/tmp/memcached-1.4.21.tar.gz':
     ensure => present,
