@@ -1,7 +1,7 @@
 class memcached::supervisor {
   file { '/etc/supervisor/conf.d/memcached.conf':
     ensure => present,
-    source => 'puppet:///modules/memcached/etc/supervisor/conf.d/memcached.conf',
+    content => template('memcached/memcached.conf.erb'),
     mode => 644
   }
 }

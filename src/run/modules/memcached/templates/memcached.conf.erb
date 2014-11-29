@@ -1,0 +1,4 @@
+[program:memcached]
+command = /usr/local/bin/memcached -u root -m <%= @cachesize %>
+autostart = true
+autorestart = true
