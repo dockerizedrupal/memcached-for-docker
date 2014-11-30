@@ -5,4 +5,4 @@ memcached:
     - "11211:11211"
     - "11211:11211/udp"
   environment:
-    - CACHESIZE=64
+    - CACHESIZE="64"
