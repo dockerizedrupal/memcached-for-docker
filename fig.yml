@@ -9,4 +9,4 @@ memcached:
     - MAX_CONNECTIONS="1024"
     - THREADS="4"
     - MAX_ITEM_SIZE="1"
-    - VERBOSITY="vvv"
+    - VERBOSITY="v"
