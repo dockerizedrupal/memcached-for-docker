@@ -16,7 +16,7 @@ Using the `docker` command:
       -e CACHESIZE="64" \
       -e MAX_CONNECTIONS="1024" \
       -e THREADS="4" \
-      -e MAX_ITEM_SIZE="1" \
+      -e MAX_ITEM_SIZE="1m" \
       -e VERBOSITY="v" \
       -d \
       simpledrupalcloud/memcached:latest

@@ -19,7 +19,7 @@ fi
 export FACTER_THREADS="${THREADS}"
 
 if [ -z "${MAX_ITEM_SIZE}" ]; then
-  MAX_ITEM_SIZE="1"
+  MAX_ITEM_SIZE="1m"
 fi
 
 export FACTER_MAX_ITEM_SIZE="${MAX_ITEM_SIZE}"
