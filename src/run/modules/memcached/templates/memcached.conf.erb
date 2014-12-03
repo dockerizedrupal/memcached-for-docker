@@ -1,4 +1,6 @@
 [program:memcached]
-command = /usr/local/bin/memcached -u root -m <%= @cachesize %> -c <%= @max_connections %> -t <%= @threads %> -I <%= @max_item_size %> <% if @verbosity %>-<%= @verbosity %><% end %>
+command = /usr/local/bin/memcached -u root -m <%= @cachesize %> -c <%= @max_connections %> -t <%= @threads %> -I <%= @max_item_size %> -<%= @verbosity %>
 autostart = true
 autorestart = true
+stdout_events_enabled = true
+stderr_events_enabled = true
