@@ -5,4 +5,8 @@ memcached:
     - "11211:11211"
     - "11211:11211/udp"
   environment:
-    - MEMORY="64"
+    - CACHESIZE="64"
+    - MAX_CONNECTIONS="1024"
+    - THREADS="4"
+    - MAX_ITEM_SIZE="1"
+    - VERBOSITY=""

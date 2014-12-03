@@ -13,7 +13,11 @@ Using the `docker` command:
       -h "${CONTAINER}" \
       -p 11211:11211 \
       -p 11211:11211/udp \
-      -e MEMORY="64" \
+      -e CACHESIZE="64" \
+      -e MAX_CONNECTIONS="1024" \
+      -e THREADS="4" \
+      -e MAX_ITEM_SIZE="1" \
+      -e VERBOSITY="" \
       -d \
       simpledrupalcloud/memcached:dev
       
