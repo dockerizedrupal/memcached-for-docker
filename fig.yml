@@ -8,5 +8,5 @@ memcached:
     - CACHESIZE="64"
     - MAX_CONNECTIONS="1024"
     - THREADS="4"
-    - MAX_ITEM_SIZE="1"
+    - MAX_ITEM_SIZE="1m"
     - VERBOSITY="v"
