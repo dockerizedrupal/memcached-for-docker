@@ -17,7 +17,7 @@ Using the `docker` command:
       -e MAX_CONNECTIONS="1024" \
       -e THREADS="4" \
       -e MAX_ITEM_SIZE="1" \
-      -e VERBOSITY="" \
+      -e VERBOSITY="vvv" \
       -d \
       simpledrupalcloud/memcached:dev
       
