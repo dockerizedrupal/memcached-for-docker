@@ -19,4 +19,4 @@ RUN apt-get clean
 EXPOSE 11211/tcp
 EXPOSE 11211/udp
 
-ENTRYPOINT ["/src/run.sh"]
+CMD ["/src/run.sh"]
