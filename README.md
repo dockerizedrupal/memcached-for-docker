@@ -2,9 +2,7 @@
 
 A [Docker](https://docker.com/) container for [Memcached](http://memcached.org/).
 
-## Memcached (STABLE BRANCH)
-
-### Run the container
+## Run the container
 
 Using the `docker` command:
 
@@ -28,7 +26,7 @@ Using the `fig` command
       && cd "${TMP}" \
       && sudo fig up
 
-### Build the image
+## Build the image
 
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-memcached.git "${TMP}" \
