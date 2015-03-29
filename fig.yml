@@ -1,5 +1,5 @@
 memcached:
-  image: simpledrupalcloud/memcached:dev
+  image: viljaste/memcached:dev
   hostname: memcached
   ports:
     - "11211:11211"

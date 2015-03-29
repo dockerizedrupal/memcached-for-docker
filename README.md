@@ -17,7 +17,7 @@ Using the `docker` command:
       -e MAX_ITEM_SIZE="1m" \
       -e VERBOSITY="v" \
       -d \
-      simpledrupalcloud/memcached:dev
+      viljaste/memcached:dev
       
 Using the `fig` command
 
@@ -33,7 +33,7 @@ Using the `fig` command
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-memcached.git "${TMP}" \
       && cd "${TMP}" \
       && git checkout dev \
-      && sudo docker build -t simpledrupalcloud/memcached:dev . \
+      && sudo docker build -t viljaste/memcached:dev . \
       && cd -
 
 ## License
