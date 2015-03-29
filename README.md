@@ -17,14 +17,13 @@ Using the `docker` command:
       -e MAX_ITEM_SIZE="1m" \
       -e VERBOSITY="v" \
       -d \
-      viljaste/memcached:dev
+      viljaste/memcached:latest
       
 Using the `fig` command
 
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-memcached.git "${TMP}" \
       && cd "${TMP}" \
-      && git checkout dev \
       && sudo fig up
 
 ## Build the image
@@ -32,8 +31,7 @@ Using the `fig` command
     TMP="$(mktemp -d)" \
       && git clone http://git.simpledrupalcloud.com/simpledrupalcloud/docker-memcached.git "${TMP}" \
       && cd "${TMP}" \
-      && git checkout dev \
-      && sudo docker build -t viljaste/memcached:dev . \
+      && sudo docker build -t viljaste/memcached:latest . \
       && cd -
 
 ## License
