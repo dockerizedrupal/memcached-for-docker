@@ -29,7 +29,3 @@ if [ -z "${VERBOSITY}" ]; then
 fi
 
 export FACTER_VERBOSITY="${VERBOSITY}"
-
-puppet apply --modulepath=/src/run/modules /src/run/run.pp
-
-/usr/bin/supervisord
