@@ -1,3 +1,3 @@
-class run {
-  include run::memcached
+class build {
+  include build::memcached
 }

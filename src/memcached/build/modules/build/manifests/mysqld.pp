@@ -1,9 +1,9 @@
-class run::memcached {
-  require run::memcached::packages
+class build::memcached {
+  require build::memcached::packages
 
   file { '/tmp/memcached-1.4.24.tar.gz':
     ensure => present,
-    source => 'puppet:///modules/run/tmp/memcached-1.4.24.tar.gz'
+    source => 'puppet:///modules/build/tmp/memcached-1.4.24.tar.gz'
   }
 
   bash_exec { 'cd /tmp && tar xzf memcached-1.4.24.tar.gz':
