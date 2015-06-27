@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -z "${CACHESIZE}" ]; then
-  CACHESIZE="64"
+  CACHESIZE="512"
 fi
 
 export FACTER_CACHESIZE="${CACHESIZE}"
@@ -19,7 +19,7 @@ fi
 export FACTER_THREADS="${THREADS}"
 
 if [ -z "${MAX_ITEM_SIZE}" ]; then
-  MAX_ITEM_SIZE="1m"
+  MAX_ITEM_SIZE="16m"
 fi
 
 export FACTER_MAX_ITEM_SIZE="${MAX_ITEM_SIZE}"

@@ -1,4 +1,4 @@
-class memcached::packages {
+class run::memcached::packages {
   package {[
       'build-essential',
       'libevent-dev'

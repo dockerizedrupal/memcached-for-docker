@@ -1,7 +1,7 @@
-class memcached::supervisor {
+class run::memcached::supervisor {
   file { '/etc/supervisor/conf.d/memcached.conf':
     ensure => present,
-    content => template('memcached/memcached.conf.erb'),
+    content => template('run/memcached.conf.erb'),
     mode => 644
   }
 }

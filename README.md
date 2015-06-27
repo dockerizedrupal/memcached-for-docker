@@ -11,10 +11,10 @@ Using the `docker` command:
       -h "${CONTAINER}" \
       -p 11211:11211 \
       -p 11211:11211/udp \
-      -e CACHESIZE="64" \
+      -e CACHESIZE="512" \
       -e MAX_CONNECTIONS="1024" \
       -e THREADS="4" \
-      -e MAX_ITEM_SIZE="1m" \
+      -e MAX_ITEM_SIZE="16m" \
       -e VERBOSITY="v" \
       -d \
       viljaste/memcached:latest
