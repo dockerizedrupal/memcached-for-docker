@@ -1,5 +1,5 @@
 memcached:
-  image: viljaste/memcached:latest
+  image: dockerizedrupal/memcached:latest
   hostname: memcached
   ports:
     - "11211:11211"
