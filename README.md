@@ -17,14 +17,14 @@ Using the `docker` command:
       -e MAX_ITEM_SIZE="16m" \
       -e VERBOSITY="v" \
       -d \
-      dockerizedrupal/memcached:1.0.1
+      dockerizedrupal/memcached:1.0.2
       
 Using the `docker-compose` command
 
     TMP="$(mktemp -d)" \
       && git clone https://github.com/dockerizedrupal/docker-memcached.git "${TMP}" \
       && cd "${TMP}" \
-      && git checkout 1.0.1 \
+      && git checkout 1.0.2 \
       && sudo docker-compose up
 
 ## Build the image
@@ -32,8 +32,8 @@ Using the `docker-compose` command
     TMP="$(mktemp -d)" \
       && git clone https://github.com/dockerizedrupal/docker-memcached.git "${TMP}" \
       && cd "${TMP}" \
-      && git checkout 1.0.1 \
-      && sudo docker build -t dockerizedrupal/memcached:1.0.1 . \
+      && git checkout 1.0.2 \
+      && sudo docker build -t dockerizedrupal/memcached:1.0.2 . \
       && cd -
 
 ## License

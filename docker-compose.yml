@@ -1,5 +1,5 @@
 memcached:
-  image: dockerizedrupal/memcached:1.0.1
+  image: dockerizedrupal/memcached:1.0.2
   hostname: memcached
   ports:
     - "11211:11211"
