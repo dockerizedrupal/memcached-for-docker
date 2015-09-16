@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+if [ -z "${TIMEZONE}" ]; then
+  TIMEZONE="Etc/UTC"
+fi
+
+export FACTER_TIMEZONE="${TIMEZONE}"
+
 if [ -z "${CACHESIZE}" ]; then
   CACHESIZE="512"
 fi

@@ -1,10 +1,11 @@
 memcached:
-  image: dockerizedrupal/memcached:1.0.2
+  image: dockerizedrupal/memcached:1.0.3
   hostname: memcached
   ports:
     - "11211:11211"
     - "11211:11211/udp"
   environment:
+    - TIMEZONE=Etc/UTC
     - CACHESIZE=512
     - MAX_CONNECTIONS=1024
     - THREADS=4
