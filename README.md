@@ -1,6 +1,6 @@
 # docker-memcached
 
-A [Docker](https://docker.com/) container for [Memcached](http://memcached.org/).
+A Docker image for [Memcached](http://memcached.org/) that is used in the [Dockerized Drupal](https://dockerizedrupal.com/) project.
 
 ## Run the container
 
@@ -14,17 +14,17 @@ A [Docker](https://docker.com/) container for [Memcached](http://memcached.org/)
       -e MAX_CONNECTIONS="1024" \
       -e THREADS="4" \
       -e MAX_ITEM_SIZE="16m" \
-      -e VERBOSITY="v" \
+      -e VERBOSITY="" \
       -d \
-      dockerizedrupal/memcached:1.0.6
+      dockerizedrupal/memcached:1.1.0
 
 ## Build the image
 
     TMP="$(mktemp -d)" \
       && git clone https://github.com/dockerizedrupal/docker-memcached.git "${TMP}" \
       && cd "${TMP}" \
-      && git checkout 1.0.6 \
-      && sudo docker build -t dockerizedrupal/memcached:1.0.6 . \
+      && git checkout 1.1.0 \
+      && sudo docker build -t dockerizedrupal/memcached:1.1.0 . \
       && cd -
 
 ## Changing the container behaviour on runtime through environment variables

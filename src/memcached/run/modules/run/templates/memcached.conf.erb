@@ -1,5 +1,9 @@
 [program:memcached]
+<% if @verbosity and !@verbosity.empty? -%>
 command = /usr/local/bin/memcached -u root -m <%= @cachesize %> -c <%= @max_connections %> -t <%= @threads %> -I <%= @max_item_size %> -<%= @verbosity %>
+<% else -%>
+command = /usr/local/bin/memcached -u root -m <%= @cachesize %> -c <%= @max_connections %> -t <%= @threads %> -I <%= @max_item_size %>
+<% end -%>
 autostart = true
 autorestart = true
 stdout_logfile = /dev/stdout

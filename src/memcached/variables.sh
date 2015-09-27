@@ -30,8 +30,4 @@ fi
 
 export FACTER_MAX_ITEM_SIZE="${MAX_ITEM_SIZE}"
 
-if [ -z "${VERBOSITY}" ]; then
-  VERBOSITY="v"
-fi
-
 export FACTER_VERBOSITY="${VERBOSITY}"

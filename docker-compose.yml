@@ -1,5 +1,5 @@
 memcached:
-  image: dockerizedrupal/memcached:1.0.6
+  image: dockerizedrupal/memcached:1.1.0
   hostname: memcached
   ports:
     - "11211:11211"
@@ -10,4 +10,4 @@ memcached:
     - MAX_CONNECTIONS=1024
     - THREADS=4
     - MAX_ITEM_SIZE=16m
-    - VERBOSITY=v
+    - VERBOSITY=
